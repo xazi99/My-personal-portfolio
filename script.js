@@ -149,6 +149,3 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('Failed to send email');
     });
 });
-
-//menu
-
