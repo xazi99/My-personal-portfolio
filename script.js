@@ -149,3 +149,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('Failed to send email');
     });
 });
+ document.getElementById('menu-icon').addEventListener('click', function() {
+    var navlist = document.querySelector('.navlist');
+    navlist.style.display = navlist.style.display === 'flex' ? 'none' : 'flex';
+ });  
