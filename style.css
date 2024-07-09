@@ -233,7 +233,7 @@ section{
 
 .info-box span{
     font-size: .9rem;
-    color: plum;
+    color: rgb(145, 115, 120);
 }
 
 .btn-box{
@@ -387,6 +387,7 @@ section{
 .about .img-about img{
     max-width: 400px;
     height: auto;
+    border-radius: 50%;
 }
 .about-content span{
     color: white;
@@ -452,7 +453,6 @@ section{
     font-size: 1rem;
     font-weight: 500;
 }
-
 
 /**********services section css*********/
 
