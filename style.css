@@ -508,10 +508,10 @@ section{
     opacity: 1;
 }
 .portfolio-layer h4{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .portfolio-layer p{
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: .3rem 0 1rem; 
 }
 .portfolio-layer a {
