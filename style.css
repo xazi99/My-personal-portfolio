@@ -112,7 +112,7 @@ span{
     z-index: 10001;
     cursor: pointer;
     margin-left: 25px;
-    background: var(--hover-color);
+    background: white;
     border-radius: 3px;
     color: var(--secon-bg-color);
     display: none;
@@ -121,7 +121,7 @@ span{
 .menu-box{
     width: fit-content;
     height: auto;
-    background-color: pink;
+    background-color: white;
     margin: 10px 8px;
     position: absolute;
     border-radius: 4px;
@@ -134,7 +134,7 @@ span{
 .menu-box div {
     width: 100%;
     height: 3px;
-    background-color: pink;
+    background-color: white;
 }
 
 .line1, .line2, .line3{
@@ -452,6 +452,45 @@ section{
     color: var(--hover-color);
     font-size: 1rem;
     font-weight: 500;
+}
+
+.tab-titles{
+   display: flex;
+   margin: 20px 0 40px;
+}
+.tab-links{
+   margin-right: 50px;
+   font-size: 20px;
+   font-weight: 500;
+   cursor: pointer;
+   position: relative; 
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(145, 115, 120);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:  rgb(145, 115, 120);
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
 
 /**********services section css*********/

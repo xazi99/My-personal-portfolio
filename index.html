@@ -128,31 +128,26 @@
             Let's build the future together, one line of code at a time.</p>
 
 
-          <div class="btn-box">
-            <a href="namso/edu.html" class="btn">Education</a>
-            <a href="namso/exp.html" class="btn">Experience</a>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="education">
+            <ul>
+              <li><span>Walter Sisulu University</span><br>ND:Information Technology CNET 2021</li>
+              <li><span>Zwelivumile Senior Secondary School</span><br>Matric 2017</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Capacti</span><br>Full-Stack Software Developer Intern 2024</li>
+              <li><span>Maxama PS</span><br>Educational Assistance 2023</li>
+            </ul>
           </div>
         </div>
 
-     </section>
-
-      <!-------
-     <section>
-      <div id="education" class="Education">
-        <h2>Education</h2>
-        <h3>
-          Walter Sisulu University
-        </h3>
-        <p>National Diploma in Information Technology Communication Networks</p>
-        <p>2021</p>
-
-        <h3>
-          Zwelivumile Senior Secondary School
-        </h3>
-        <p>Matrix</p>
-        <p>2017</p>
-      </div>
-     </section>
+     </section>  
 
 
      <!-------------------skills section---------------->
@@ -304,6 +299,25 @@
       <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
      </footer>
      
+  <script>
+      
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add(active-tab);
+
+      }
+  </script>
+
+
 
     <script src="mixitup.min.js"></script>
     <script defer src="script.js"></script>

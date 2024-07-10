@@ -152,4 +152,21 @@ document.getElementById('contactForm').addEventListener('submit', function(event
  document.getElementById('menu-icon').addEventListener('click', function() {
     var navlist = document.querySelector('.navlist');
     navlist.style.display = navlist.style.display === 'flex' ? 'none' : 'flex';
- });  
+ }); 
+ 
+ //education & experience section////
+
+ var tablinks = document.getElementsByClassName("tab-links");
+ var tabcontents = document.getElementsByClassName("tab-contents");
+
+ function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    Event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add(active-tab);
+ }
+ 
