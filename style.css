@@ -490,7 +490,7 @@ section{
     display: none;
 }
 .tab-contents.active-tab{
-    display: block;
+    display: block ;
 }
 
 /**********services section css*********/

@@ -129,8 +129,8 @@
 
 
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links active-link" onclick="opentab('education, event')">Education</p>
+            <p class="tab-links" onclick="opentab('experience, event')">Experience</p>
           </div>
 
           <div class="tab-contents active-tab" id="education">
@@ -141,7 +141,7 @@
           </div>
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span>Capacti</span><br>Full-Stack Software Developer Intern 2024</li>
+              <li><span>Capaciti</span><br>Full-Stack Software Developer Intern 2024</li>
               <li><span>Maxama PS</span><br>Educational Assistance 2023</li>
             </ul>
           </div>
@@ -258,12 +258,12 @@
             </div>
           </div>
           <div class="portfolio-box">
-            <img src="images/citie_bank.PNG" alt="">
+            <img src="images/LMS.png" alt="">
 
             <div class="portfolio-layer">
               <h4>Library Management System</h4>
-              <p>Citi bank App designed with the simplest programming language which is Python, 
-                it contains all the functionalities of a banking application.</p>
+              <p>The Library Management System is designed with the high level programming language which is Java, 
+                it contains all the functionalities of a library management application.</p>
               <a href="https://github.com/x-ngece/citi_bank"><i class='bx bx-link-external'></i></a>
             </div>
           </div>
@@ -299,23 +299,23 @@
       <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
      </footer>
      
-  <script>
-      
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+  
 
-     function opentab(tabname){
-        for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-       }
-       for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-       }
-       event.currentTarget.classList.add("active-link");
-       document.getElementById(tabname).classList.add(active-tab);
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
 
+  function opentab(tabname, event) {
+      for (var tablink of tablinks) {
+          tablink.classList.remove("active-link");
       }
-  </script>
+      for (var tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
 
 
 
