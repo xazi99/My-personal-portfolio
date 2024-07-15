@@ -603,6 +603,7 @@ section{
       border-radius: 8px;
       text-align: center;
       transition: transform 0.2s;
+      width: 10px;
     }
 
     .bar:hover {
