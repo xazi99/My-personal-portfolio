@@ -82,6 +82,9 @@ span{
 
 .navlist{
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navlist a{
@@ -116,6 +119,7 @@ span{
     border-radius: 3px;
     color: var(--secon-bg-color);
     display: none;
+    flex-direction: column;
 }
 
 .menu-box{
@@ -648,50 +652,7 @@ section{
     background:  rgba(8, 8, 8, 0.63);
     width: 100%;
  }
- /**
 
- form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-label {
-    display: block;
-    margin-bottom: 15px;
-}
-label span {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-textarea {
-    resize: vertical;
-    height: 100px;
-}
-button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #218838;
-}
- /**/
  .contact .main-text{
     text-align: center;
  }
@@ -897,9 +858,19 @@ button:hover {
         display: block;
         transition: all .4s ease;
     }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: white;
+        border-top: .1rem solid rgb(145, 115, 120);
+        box-shadow: 0 .5rem 1rem rgb(145, 115, 120);
+    }
 
     #menu-icon.bx-x{
-        transform: rotate(-180deg);
+        transform: rotate(-180deg); 
     }
 
     .navlist{
