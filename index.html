@@ -130,8 +130,8 @@
 
 
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('education, event')">Education</p>
-            <p class="tab-links" onclick="opentab('experience, event')">Experience</p>
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
           </div>
 
           <div class="tab-contents active-tab" id="education">
@@ -300,9 +300,33 @@
       <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
      </footer>
      
-  
+     <script>
+      function opentab(tabName) {
+          var i;
+          var tabContents = document.getElementsByClassName("tab-contents");
+          var tabLinks = document.getElementsByClassName("tab-links");
 
+          // Hide all tab contents
+          for (i = 0; i < tabContents.length; i++) {
+              tabContents[i].classList.remove("active-tab");
+          }
+
+          // Remove active-link class from all tab links
+          for (i = 0; i < tabLinks.length; i++) {
+              tabLinks[i].classList.remove("active-link");
+          }
+
+          // Show the selected tab and add active-link class to the clicked tab link
+          document.getElementById(tabName).classList.add("active-tab");
+          event.currentTarget.classList.add("active-link");
+      }
+  </script>
+
+
+
+<!----
 <script>
+  
   var tablinks = document.getElementsByClassName("tab-links");
   var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -317,6 +341,7 @@
       document.getElementById(tabname).classList.add("active-tab");
   }
 </script>
+<--->
 
 
 
