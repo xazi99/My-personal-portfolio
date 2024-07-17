@@ -154,6 +154,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     navlist.style.display = navlist.style.display === 'flex' ? 'none' : 'flex';
  }); 
  
- function myFunction(x) {
-    x.classList.toggle("change");
-  }
+ function toggleMenu() {
+    const navList = document.querySelector('.navlist');
+    navList.classList.toggle('active');
+}
